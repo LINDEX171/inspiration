@@ -36,6 +36,21 @@ class _HomePageState extends State<HomePage> {
                       Text('find your', style: TextStyle(color: Colors.black,fontSize: 25),),
                       SizedBox(height: 3,),
                       Text('inspiration', style: TextStyle(color: Colors.black,fontSize: 40),),
+                      Container(
+                        padding: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(244, 243, 243, 1),
+                          borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            prefixIcon: Icon(Icons.search,color: Colors.black87,),
+                            hintText: "search you're looking for"
+                          ),
+                        ),
+
+                      )
                     ],
                   ),
                 )
