@@ -109,7 +109,22 @@ class _HomePageState extends State<HomePage> {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.orange,
-          borderRadius: BorderRadius.circular(20)
+          borderRadius: BorderRadius.circular(20),
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage('assets/images/one.jpg'),
+          ),
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomRight,
+                  colors: [
+                    Colors.black.withOpacity(.8),
+                    Colors.black.withOpacity(.1)
+                  ]
+              )
+          ),
         ),
       ),
     );
