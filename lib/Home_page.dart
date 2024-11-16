@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   'inspiration',
-                  style: TextStyle(color: Colors.black, fontSize: 40),
+                  style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
                   height: 20,
